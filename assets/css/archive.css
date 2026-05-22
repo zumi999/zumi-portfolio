@@ -170,13 +170,13 @@ letter-spacing: 0.56px;
    ===================== */
 
 /* タブレット（768px以下） */
-@media (max-width: 768px) {
+@media (max-width: 980px) {
   .archive-section {
     padding: 64px 0;
   }
 
   .archive-container {
-    padding: 0 20px;
+    padding: 0 10%;
   }
 
   .archive-header h1 {
@@ -190,8 +190,8 @@ letter-spacing: 0.56px;
 
   /* グリッドを2カラムに */
   .works-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
   }
 
   .archive-header {
