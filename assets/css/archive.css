@@ -1,0 +1,238 @@
+/**
+ * Archive.css - Works List Page Styles
+ * 
+ * WORKSページの一覧表示スタイル
+ */
+
+/* =====================
+   Archive Page Layout
+   ===================== */
+
+.archive-section {
+  padding: 96px 0;
+  min-height: 100vh;
+}
+
+.archive-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+/* =====================
+   Archive Header
+   ===================== */
+
+.archive-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.archive-header h1 {
+  font-size: 64px;
+  font-weight: 400;
+  font-family: 'Hanken Grotesk', sans-serif;
+  letter-spacing: 2.56px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  color: var(--color-primary);
+}
+
+.archive-header p {
+  font-size: 18px;
+  color: var(--color-accent);
+  font-weight: 300;
+}
+
+/* =====================
+   Works Grid Layout
+   ===================== */
+   .works-grid {
+  display: grid;
+  height: auto;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 9%;
+  position: relative;
+}
+.works-card-container{
+  display: flex;
+  position: relative;
+  width: 100%;
+  overflow: visible;
+  aspect-ratio: 59.719 /40.281;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(-7px 7px 0 rgb(196, 196, 196, 0.9));
+}
+   
+.card-shadow:has(.works-content),.card-border-outer:has(.works-content){
+  clip-path: polygon(0 4%, 4% 0, 100% 0, 100% 9%, 100% 82.5%, 95.5% 90%, 51% 90%, 45.5% 98%, 4.5% 98%, 0 89%);
+  width: 100%;
+}
+
+
+/* =====================
+   Card Image
+   ===================== */
+
+.works-card-image {
+  /* 画像コンテナ */
+  width: 100%;
+  /* アスペクト比を固定（3:2） */
+  aspect-ratio: 487	/306;
+  
+  /* 背景画像を中央表示・カバー */
+  background-size: cover;
+  background-position: center;
+  background-color: #e0e0e0;
+  /* ズームイン効果の準備 */
+  transition: background-size 0.3s ease;
+  clip-path: polygon(0 0%, 4% 0, 100% 0, 100% 9%, 100% 81.5%, 95.5% 89%, 50.5% 89%, 45% 98%, 4.5% 98%, 0 89%);
+  width: 100%;
+}
+
+
+/* =====================
+   Card Content
+   ===================== */
+
+.works-card-content {
+  background: white;
+  padding:0 8px 0 18px;
+}
+
+.works-card-title {
+  font-size: 14px;
+  font-family: "IBM Plex Sans JP";
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 21px */
+letter-spacing: 0.56px;
+  color: var(--color-primary);
+  margin-bottom: 4px;
+  /* テキストが長い場合は省略 */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-bottom: solid 1px var(--color-primary);
+}
+
+.works-card-role {
+  font-size: 14px;
+  color: var(--color-accent);
+  margin: 0;
+  font-weight: 400;
+}
+.works-card-date{
+  background: var(--color-primary);
+  position: absolute;
+  font-size: 13px;
+  transform: rotate(90deg);
+ right: -62px;
+ top:42px;
+ color: var(--color-secondary);
+ padding: 2px 21px 2px 11px;
+}
+
+/* =====================
+   Loading & Error States
+   ===================== */
+
+.loading-message {
+  /* 3カラムをぐいぐい埋める */
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px 20px;
+  font-size: 18px;
+  color: var(--color-accent);
+}
+
+.no-works {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 80px 20px;
+  font-size: 20px;
+  color: var(--color-accent);
+}
+
+.error-message {
+  grid-column: 1 / -1;
+  background: #fff3cd;
+  border: 1px solid #ffc107;
+  border-radius: 4px;
+  padding: 16px;
+  color: #856404;
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* =====================
+   Responsive Design
+   ===================== */
+
+/* タブレット（768px以下） */
+@media (max-width: 768px) {
+  .archive-section {
+    padding: 64px 0;
+  }
+
+  .archive-container {
+    padding: 0 20px;
+  }
+
+  .archive-header h1 {
+    font-size: 48px;
+    letter-spacing: 1.92px;
+  }
+
+  .archive-header p {
+    font-size: 16px;
+  }
+
+  /* グリッドを2カラムに */
+  .works-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .archive-header {
+    margin-bottom: 60px;
+  }
+}
+
+/* スマートフォン（480px以下）*/
+@media (max-width: 480px) {
+  .archive-section {
+    padding: 48px 0;
+  }
+
+  .archive-container {
+    padding: 0 16px;
+  }
+
+  .archive-header h1 {
+    font-size: 36px;
+    letter-spacing: 1.44px;
+  }
+
+  .archive-header p {
+    font-size: 14px;
+  }
+
+  /* グリッドを1カラムに */
+  .works-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .archive-header {
+    margin-bottom: 40px;
+  }
+
+  .works-card-title {
+    font-size: 18px;
+  }
+
+  .works-card-role {
+    font-size: 13px;
+  }
+}

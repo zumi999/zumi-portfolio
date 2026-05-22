@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zumi - Web Designer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans+JP:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/archive.css">
+</head>
+
+<body>
+    <!-- Navigation Fixed Header -->
+    <header class="site-header fixed-header">
+        <div class="header-container">
+            <div class="header-border">
+                <svg xmlns="http://www.w3.org/2000/svg" width="436" height="67" viewBox="0 0 436 67" fill="none">
+                    <path id="border1" d="M19.5 5.5V66.5H3.5V22.5L19.5 5.5Z" fill="black" />
+                    <path id="border2" d="M435.5 0.5H20.4661L0.5 22.0278V66.5M19.5 5.5V66.5H3.5V22.5L19.5 5.5Z"
+                        stroke="black" />
+                </svg>
+                <!-- Primary Navigation -->
+                <nav class="site-nav">
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="337" height="337" viewBox="0 0 337 337"
+                                    fill="none" alt="About Icon" class="nav-icon">
+                                    <path
+                                        d="M334.28 197C313.28 193 290.28 189 272.28 176C267.28 167 275.28 159 281.28 152C296.28 131 308.28 112 314.28 87C315.28 80 312.28 70 304.28 71C288.28 85 268.28 96 247.28 99C242.28 100 239.28 95 238.28 91C235.28 63 227.28 36 216.28 11C213.28 5 207.28 0 200.28 0C193.28 1 195.28 10 194.28 15C190.28 33 186.28 50 175.28 64C172.28 68 167.28 66 163.28 64C138.28 46 115.28 30 86.28 22C81.28 21 77.28 23 73.28 25C69.28 27 71.28 30 71.28 32C82.28 51 96.28 67 99.28 89C99.28 94 95.28 97 91.28 97C62.28 101 36.28 108 10.28 120C3.28004 124 -2.71996 132 1.28004 140C22.28 143 42.28 147 61.28 159C65.28 161 67.28 165 65.28 169C54.28 188 40.28 204 31.28 224C27.28 233 24.28 241 21.28 250C20.28 256 22.28 262 27.28 265C29.28 266 32.28 266 34.28 264L37.28 261C40.28 260 42.28 258 44.28 256C59.28 248 72.28 237 89.28 238C92.28 238 95.28 238 96.28 242C99.28 254 99.28 265 102.28 277C103.28 281 104.28 284 105.28 288C110.28 302 113.28 316 122.28 329C125.28 334 132.28 339 139.28 335C143.28 318 145.28 302 152.28 286C156.28 279 160.28 268 169.28 272C174.28 274 179.28 278 184.28 282C204.28 297 226.28 307 249.28 315C253.28 316 257.28 315 260.28 313C262.28 311 267.28 308 265.28 305C252.28 287 240.28 268 236.28 247C238.28 239 247.28 238 254.28 238C280.28 235 304.28 227 328.28 215C333.28 212 339.28 203 334.28 197Z" />
+                                </svg>
+                                <span>About</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./archive.html" class="nav-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="370" height="292" viewBox="0 0 370 292"
+                                    fill="none" class="nav-icon" alt="Works Icon">
+                                    <path
+                                        d="M44.8409 281.771C-87.4091 331.661 196.751 181.841 177.921 102.111C162.391 36.3907 -89.9589 108.481 34.2611 45.6407C155.011 -15.4493 352.221 -9.90923 368.971 31.0408C384.511 69.0108 177.081 231.881 44.8309 281.771H44.8409Z" />
+                                </svg>
+                                <span>Works</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="197" height="195" viewBox="0 0 197 195"
+                                    fill="none" class="nav-icon" alt="Contact Icon">
+                                    <path
+                                        d="M159.171 0C139.929 0 124.094 14.5736 122.094 33.2848H74.1965C71.5914 15.2337 56.0668 1.35951 37.2927 1.35951C16.6954 1.35951 0 18.055 0 38.6523C0 57.8939 14.5737 73.7288 33.2849 75.7288V120.385C14.5737 122.385 0 138.22 0 157.462C0 178.059 16.6954 194.754 37.2927 194.754C57.8899 194.754 74.5855 178.059 74.5855 157.462C74.5855 138.22 60.0118 122.385 41.3006 120.385V75.7288C59.1435 73.8192 73.2142 59.332 74.4794 41.3045H122.09C124.09 60.0157 139.925 74.5894 159.167 74.5894C179.764 74.5894 196.46 57.8939 196.46 37.2967C196.46 16.6994 179.764 0.00393311 159.167 0.00393311L159.171 0Z" />
+                                </svg>
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-bg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="445" height="66" viewBox="0 0 445 66" fill="none">
+                    <foreignObject x="0" y="0" width="0" height="0">
+                        <div xmlns="http://www.w3.org/1999/xhtml"
+                            style="backdrop-filter:blur(0px);clip-path:url(#bgblur_0_22_301_clip_path);height:100%;width:100%">
+                        </div>
+                    </foreignObject>
+                    <path data-figma-bg-blur-radius="0" d="M20 0.133975L445 0V66H0V21.5L20 0.133975Z" fill="white"
+                        fill-opacity="0.4" />
+                    <defs>
+                        <clipPath id="bgblur_0_22_301_clip_path" transform="translate(0 0)">
+                            <path d="M20 0.133975L445 0V66H0V21.5L20 0.133975Z" />
+                        </clipPath>
+                    </defs>
+                </svg>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="screen-frame top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="51" height="51" viewBox="0 0 51 51" fill="none">
+            <path d="M50.5 1.5L18.5 1.5L1.5 18V50.5" stroke="black" stroke-width="3" />
+        </svg>
+    </div>
+
+    <div class="screen-frame bottom">
+        <svg xmlns="http://www.w3.org/2000/svg" width="51" height="51" viewBox="0 0 51 51" fill="none">
+            <path d="M50.5 49H18.5L1.5 32.5V0" stroke="black" stroke-width="3" />
+        </svg>
+    </div>
+
+    <div class="local-time">
+        <p class="time-label">LOCAL TIME</p>
+        <p class="time-display" id="current-time">--:-- --</p>
+    </div>
+
+    <button id="btn-toggle"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16"
+            fill="none">
+            <path
+                d="M17 7.81817C9.71271 8.43728 9.16754 8.93359 8.5 15.6363C7.8269 8.93359 7.28729 8.43216 0 7.81817C7.28729 7.19906 7.83246 6.70275 8.5 0C9.1731 6.70275 9.71271 7.20418 17 7.81817Z" />
+        </svg><span>CHANGE COLOR</span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="16"
+            viewBox="0 0 17 16" fill="none">
+            <path
+                d="M17 7.81817C9.71271 8.43728 9.16754 8.93359 8.5 15.6363C7.8269 8.93359 7.28729 8.43216 0 7.81817C7.28729 7.19906 7.83246 6.70275 8.5 0C9.1731 6.70275 9.71271 7.20418 17 7.81817Z" />
+        </svg></button>
+
+    <!-- Main Content Wrapper -->
+    <div class="site-main-wrapper">
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="hero-container">
+                <div class="hero-left">
+                    <div class="hero-left-inner">
+                        <h1 class="hero-title">ZUMI</h1>
+                        <div class="hero-subtitle">
+                            <h2>Web Designer<br>Portfolio Site</h2>
+                        </div>
+                        <a href="#about" class="scroll-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39"
+                                fill="none">
+                                <path d="M37 0V37H0" stroke-width="3" />
+                                <line x1="35.9393" y1="36.0607" x2="3.93934" y2="4.06066" stroke-width="3" />
+                            </svg>
+                            <span>SCROLL</span>
+                        </a>
+                    </div>
+                    <div class="hero-left-bottom">
+                        <div class="shadow-wrapper">
+                            <div class="monster-container">
+                                <div class="monster-inner">
+                                    <p class="speech">&#92;&ensp;Hi Guys!&ensp;/</p>
+                                    <div class="pixel-monster"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shadow-wrapper wait">
+                            <div class="intro-txt">
+                                <div class="box-inner">
+                                    <p>I'm Hirozumi Kobayashi, a freelance web designer based in Tokyo. I focus on UI
+                                        design and website creation, working from concept to execution. This site is a
+                                        collection of my work, thoughts,and the process behind what I create.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <!-- Portfolio Preview - Slideshow -->
+            <div class="card-shadow" id="no1">
+                <div class="card-border-outer">
+                    <div class="card-border-inner">
+                        <div class="slideshow-container">
+                            <div class="card-content slide ">
+                                <div class="transparent"></div>
+                            </div>
+                            <div class="card-content slide active">
+                                <img src="assets/images/slider1.png" alt="Featured Work 1">
+                            </div>
+                            <div class="card-content slide ">
+                                <div class="transparent"></div>
+                            </div>
+                            <div class="card-content slide">
+                                <img src="assets/images/slider2.png" alt="Featured Work 2">
+                            </div>
+                            <div class="card-content slide ">
+                                <div class="transparent"></div>
+                            </div>
+                            <div class="card-content slide">
+                                <img src="assets/images/slider3.png" alt="Featured Work 3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="shadow-wrapper">
+                <div class="compass-box wait">
+                    <div class="box-inner">
+                        <div class="compass-wrap">
+                            <svg id="compass" viewBox="-140 -140 280 280" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="0" cy="0" r="130" fill="none" stroke="#111" stroke-width="1.5" />
+                                <circle cx="0" cy="0" r="108" fill="none" stroke="#ddd" stroke-width="0.8" />
+                                <circle cx="0" cy="0" r="28" fill="none" stroke="#111" stroke-width="1.5" />
+                                <g id="ticks"></g>
+                                <line x1="0" y1="-130" x2="0" y2="-108" stroke="#111" stroke-width="1.5" />
+                                <line x1="0" y1="108" x2="0" y2="130" stroke="#111" stroke-width="1.5" />
+                                <line x1="-130" y1="0" x2="-108" y2="0" stroke="#111" stroke-width="1.5" />
+                                <line x1="108" y1="0" x2="130" y2="0" stroke="#111" stroke-width="1.5" />
+                                <text x="0" y="-114" text-anchor="middle" dominant-baseline="auto"
+                                    font-family="'Courier New',monospace" font-size="18" fill="#111">N</text>
+                                <text x="0" y="130" text-anchor="middle" dominant-baseline="hanging"
+                                    font-family="'Courier New',monospace" font-size="18" fill="#bbb">S</text>
+                                <text x="116" y="0" text-anchor="start" dominant-baseline="middle"
+                                    font-family="'Courier New',monospace" font-size="18" fill="#bbb">E</text>
+                                <text x="-116" y="0" text-anchor="end" dominant-baseline="middle"
+                                    font-family="'Courier New',monospace" font-size="18" fill="#bbb">W</text>
+                                <g id="needle">
+                                    <polygon points="0,-90 5,-20 -5,-20" fill="#111" />
+                                    <polygon points="0,90 5,20 -5,20" fill="none" stroke="#bbb" stroke-width="1.2" />
+                                    <circle cx="0" cy="0" r="4" fill="#111" />
+                                </g>
+                            </svg>
+                        </div>
+
+                        <div class="readout">
+                            <div class="deg" id="degTxt">— °</div>
+                            <div class="dir" id="dirTxt"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shadow-wrapper">
+                <div class="scope-wrap">
+                    <div class="screen">
+                        <canvas id="c"></canvas>
+                    </div>
+                    <div class="readout-scope" id="rd">↓K7K3</div>
+                </div>
+            </div>
+            <div class="shadow-wrapper">
+                <div class="meter-container">
+                    <div class="meter-inner">
+                        <div class="row">
+                            <div class="top-line">
+                                <span class="num">01.</span>
+                                <div class="bar-area"><canvas id="c1" height="7"></canvas></div>
+                            </div>
+                            <div class="label">DESIGN</div>
+                        </div>
+                        <div class="row">
+                            <div class="top-line">
+                                <span class="num">02.</span>
+                                <div class="bar-area"><canvas id="c2" height="7"></canvas></div>
+                            </div>
+                            <div class="label">DEVELOPMENT</div>
+                        </div>
+                        <div class="row">
+                            <div class="top-line">
+                                <span class="num">03.</span>
+                                <div class="bar-area"><canvas id="c3" height="7"></canvas></div>
+                            </div>
+                            <div class="label">DIRECTION</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="section-container">
+                <div class="about-wrapper">
+                    <h2 class="about-title">ABOUT</h2>
+                    <div class="about-content">
+                        <!-- Profile Image -->
+                        <div class="about-image-container">
+                            <div class="image-shadow"></div>
+                            <img src="assets/images/self-portrait.png" alt="Profile" class="about-image">
+                        </div>
+
+                        <!-- Profile Information -->
+                        <div class="about-info">
+                            <!-- Metadata Section -->
+                            <div class="about-metadata">
+                                <div class="metadata-row">
+                                    <span class="metadata-label">NAME</span>
+                                    <span class="metadata-value">HIROZUMI KOBAYASHI</span>
+                                </div>
+                                <div class="metadata-row">
+                                    <span class="metadata-label">ROLE</span>
+                                    <span class="metadata-value">WEB DESIGNER · WEB DIRECTOR</span>
+                                </div>
+                                <div class="metadata-row">
+                                    <span class="metadata-label">BASE</span>
+                                    <span class="metadata-value">TOKYO</span>
+                                </div>
+                            </div>
+
+                            <!-- Profile Section -->
+                            <div class="about-profile">
+                                <div class="profile-header">
+                                    <h3 class="profile-title">PROFILE</h3>
+                                    <div class="language-toggle">
+                                        <button class="lang-btn active" data-lang="jp">JP</button>
+                                        <button class="lang-btn" data-lang="en">EN</button>
+                                    </div>
+                                </div>
+
+                                <div class="profile-text" id="profile-jp">
+                                    <p>フリーランスのWebデザイナーとして、UIデザインやWebサイト制作を中心に活動。Webサイトの構成設計や情報設計、導線設計など、ロジカルな視点からの設計を強みとし、目的から逆算した分かりやすく伝わるデザインを重視。<br>
+                                        これまでにECサイト運営やWeb制作など、Web領域を中心に幅広い業務に従事。ビジネスとユーザー体験の両面を意識した視点で設計・改善を行う。
+                                        新卒では株式会社IDOMにて中古車の買取・販売に従事し、約200名中5位の買取実績を獲得。その後、MINI正規ディーラーでの新車販売も経験。営業として培った「伝える力」と「顧客視点」を強みとする。
+                                    </p>
+                                </div>
+
+                                <div class="profile-text hidden" id="profile-en">
+                                    <p>Freelance Web Designer specializing in UI design and website development.
+                                        Strengths include logical, structured approaches to website architecture,
+                                        information design, and user flow, with a strong focus on creating clear,
+                                        purpose-driven designs by working backward from business goals.<br>Experienced
+                                        in a wide range of web-related work, including e-commerce site operations and
+                                        web production. Approaches design and improvement from both business and user
+                                        experience perspectives.<br>Began career at IDOM Inc., working in used car
+                                        purchasing and sales, achieving 5th place in performance out of approximately
+                                        200 employees. Later gained experience in new car sales at an authorized MINI
+                                        dealership. Brings strong communication skills and a customer-centric mindset
+                                        developed through a background in sales.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Works Section -->
+        <section class="works-section" id="works">
+            <div class="section-container">
+                <h2 class="section-title">Works</h2>
+                <div class="works-grid" id="works-container">
+                    <!-- Works will be dynamically loaded from microCMS -->
+                    <div class="loading">Loading works...</div>
+                </div>
+                <div class="link-wrapper">
+                    <a href="./archive.html" class="link-btn" target="_blank" rel="noopener noreferrer">
+                        <span>VIEW MORE</span><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                            viewBox="0 0 39 39" fill="none">
+                            <path d="M37 0V37H0" stroke-width="5"></path>
+                            <line x1="35.9393" y1="36.0607" x2="3.93934" y2="4.06066" stroke-width="5"></line>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="site-footer" id="contact">
+            <div class="footer-container">
+                <section class="contact-section">
+                    <div class="contact-header">
+                        <h2>Contact</h2>
+                    </div>
+
+                    <div class="contact-content">
+                        <div class="contact-message">
+                            <p>お仕事のご依頼やお問合せは下記アドレス<br>
+                                もしくはLinkdinよりご連絡ください。</p>
+                            <p>For job inquiries or any questions, please contact me at the email address below or reach
+                                out via LinkedIn.</p>
+                        </div>
+
+                        <!-- Contact Links -->
+                        <div class="contact-links">
+                            <!-- Email -->
+                            <a href="mailto:hkobayashi.bis@gmail.com" class="link-box email-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="17" viewBox="0 0 33 17"
+                                    fill="none">
+                                    <path
+                                        d="M32.616 3.98827C30.0295 2.97522 26.9284 2.38487 23.5957 2.38487C15.231 2.38487 8.32946 6.10113 7.33794 10.9002H0C0 4.87999 8.23488 0 18.3934 0C24.1247 0 29.2435 1.55317 32.616 3.98893V3.98827Z" />
+                                    <path
+                                        d="M0 12.6695C2.58645 13.6826 5.68757 14.2729 9.02027 14.2729C17.385 14.2729 24.2865 10.5567 25.278 5.75757H32.616C32.616 11.7778 24.3811 16.6578 14.2225 16.6578C8.49124 16.6578 3.37249 15.1046 0 12.6689V12.6695Z"
+                                        fill="black" />
+                                </svg>
+                                <span>hkobayashi.bis@gmail.com</span>
+                            </a>
+
+                            <!-- Instagram -->
+                            <a href="https://www.instagram.com/zumi_3132" class="link-box instagram-link"
+                                target="_blank" rel="noopener noreferrer">
+                                <figure class="icon-box">
+                                    <div class="icon-shadow"></div>
+                                    <img src="assets/images/insta-i.png" alt="Instagram Icon" class="contact-icon">
+                                </figure>
+                                <span>INSTAGRAM</span>
+                            </a>
+
+                            <!-- LinkedIn -->
+                            <a href="www.linkedin.com/in/zumi3132" class="link-box linkedin-link" target="_blank"
+                                rel="noopener noreferrer">
+                                <figure class="icon-box">
+                                    <div class="icon-shadow"></div>
+                                    <img src="assets/images/linkdin-i.png" alt="LinkedIn Icon" class="contact-icon">
+                                </figure>
+                                <span>LINKDIN</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Copyright -->
+                    <div class="copyright">
+                        <p>© 2026 Hirozumi Kobayashi</p>
+                    </div>
+                </section>
+            </div>
+        </footer>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/top.js"></script>
+</body>
+
+<script>
+    const canvas = document.getElementById('c');
+    const ctx = canvas.getContext('2d');
+
+    let W, H;
+    function resize() {
+        const r = canvas.parentElement.getBoundingClientRect();
+        W = r.width; H = r.height;
+        canvas.width = W; canvas.height = H;
+    }
+    resize();
+    new ResizeObserver(resize).observe(canvas.parentElement);
+
+    function getFillcolor() {
+        return getComputedStyle(document.documentElement)
+            .getPropertyValue('--color-primary').trim() || '#000';
+    }
+
+    const YELLOW = getFillcolor();
+    const RED = getFillcolor();
+
+    // scroll offset 0..1 cycles one "tile" forward
+    let scroll = 0;
+    const SPEED = 0.02;
+
+    // Number of depth segments visible
+    const SEGS = 10;
+
+    function lerp(a, b, t) { return a + (b - a) * t; }
+
+    function drawScene(scroll) {
+        ctx.clearRect(0, 0, W, H);
+
+        // --- Layout constants (in screen pixels) ---
+        // The "tunnel" maps to left wall x=leftWall, right wall x=rightWall
+        // at the NEAR edge (bottom of screen) and converges to VP
+        const vpX = W * 0.5;
+        const vpY = H * 0.46;  // vanishing point slightly above center
+
+        // Near-plane extents
+        const nearLeft = 0;
+        const nearRight = W;
+        const nearTop = 0;
+        const nearBot = H;
+
+        // Wall columns (left inner wall and right inner wall) at near plane
+        // These define the trench width
+        const trenchNearL = W * 0.30;
+        const trenchNearR = W * 0.70;
+        // Trench top / bottom at near plane
+        const trenchNearTop = H * 0.15;
+        const trenchNearBot = H;
+
+        // VP for trench corners
+        // All trench edges converge to vpX, vpY
+
+        // Helper: get x on a line from (vpX,vpY) to (nearX, nearY) at depth t (0=vp, 1=near)
+        function tx(nearX, t) { return lerp(vpX, nearX, t); }
+        function ty(nearY, t) { return lerp(vpY, nearY, t); }
+
+        // t values for each depth slice (scroll shifts them)
+        // We draw SEGS+1 horizontal "rings"
+        function tAtSlice(i) {
+            // i=0 nearest, i=SEGS furthest
+            // perspective: t = (i/SEGS)^0.55  so lines bunch at VP
+            let raw = (i / SEGS + scroll) % 1;
+            // map linearly — spacing appears perspective via the convergence math itself
+            return raw;
+        }
+
+        ctx.lineWidth = 0.5;
+        ctx.strokeStyle = YELLOW;
+        ctx.globalAlpha = 1;
+
+        // ---- Draw outer walls (floor and ceiling extending to screen edges) ----
+        // These are the outer surfaces: ceiling goes from screen top-left/right to trench top
+        // Floor goes from trench bottom to screen bottom-left/right
+
+        // Outer ceiling left: corner at (0,0) near, converging strip
+        // Outer ceiling right: corner at (W,0) near
+        // But we just draw the radial lines from VP outward to screen corners
+        // and horizontal rings across the full width
+
+        // FULL WIDTH horizontal rings (ceiling + floor outer surfaces)
+        for (let i = 0; i <= SEGS; i++) {
+            let t = tAtSlice(i);
+            if (t <= 0.01) continue;
+            let alpha = Math.min(1, t * 1.8);
+            ctx.globalAlpha = alpha;
+
+            // Outer ceiling horizontal line (screen left to screen right at this depth)
+            let yTop = ty(nearTop, t);
+            ctx.beginPath();
+            ctx.moveTo(tx(nearLeft, t), yTop);
+            ctx.lineTo(tx(nearRight, t), yTop);
+            ctx.stroke();
+
+            // Outer floor horizontal line
+            let yBot = ty(nearBot, t);
+            ctx.beginPath();
+            ctx.moveTo(tx(nearLeft, t), yBot);
+            ctx.lineTo(tx(nearRight, t), yBot);
+            ctx.stroke();
+
+            // Trench inner ceiling (top of trench)
+            let yTrenchTop = ty(trenchNearTop, t);
+            ctx.beginPath();
+            ctx.moveTo(tx(trenchNearL, t), yTrenchTop);
+            ctx.lineTo(tx(trenchNearR, t), yTrenchTop);
+            ctx.stroke();
+
+            // Trench floor bottom line
+            let yTrenchBot = ty(trenchNearBot, t);
+            ctx.beginPath();
+            ctx.moveTo(tx(trenchNearL, t), yTrenchBot);
+            ctx.lineTo(tx(trenchNearR, t), yTrenchBot);
+            ctx.stroke();
+        }
+        ctx.globalAlpha = 1;
+
+        // ---- Radial lines (from VP outward) ----
+        // Outer ceiling left side: VP -> (0, 0)
+        ctx.beginPath(); ctx.moveTo(vpX, vpY); ctx.lineTo(nearLeft, nearTop); ctx.stroke();
+        // Outer ceiling right side
+        ctx.beginPath(); ctx.moveTo(vpX, vpY); ctx.lineTo(nearRight, nearTop); ctx.stroke();
+        // Outer floor left
+        ctx.beginPath(); ctx.moveTo(vpX, vpY); ctx.lineTo(nearLeft, nearBot); ctx.stroke();
+        // Outer floor right
+        ctx.beginPath(); ctx.moveTo(vpX, vpY); ctx.lineTo(nearRight, nearBot); ctx.stroke();
+
+        // Trench left wall outer edge (left inner wall -> screen left)
+        ctx.beginPath(); ctx.moveTo(vpX, vpY); ctx.lineTo(trenchNearL, nearBot); ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(vpX, vpY); ctx.lineTo(trenchNearL, trenchNearTop); ctx.stroke();
+        // Trench right wall outer edge
+        ctx.beginPath(); ctx.moveTo(vpX, vpY); ctx.lineTo(trenchNearR, nearBot); ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(vpX, vpY); ctx.lineTo(trenchNearR, trenchNearTop); ctx.stroke();
+
+        // Extra vertical lines on ceiling/floor surface for grid density
+        const EXTRA = 3;
+        for (let e = 1; e <= EXTRA; e++) {
+            let f = e / (EXTRA + 1);
+            // Ceiling left zone
+            let nx = lerp(nearLeft, trenchNearL, f);
+            ctx.beginPath(); ctx.moveTo(vpX, vpY); ctx.lineTo(nx, nearTop); ctx.stroke();
+            ctx.beginPath(); ctx.moveTo(vpX, vpY); ctx.lineTo(nx, nearBot); ctx.stroke();
+            // Ceiling right zone
+            let nx2 = lerp(trenchNearR, nearRight, f);
+            ctx.beginPath(); ctx.moveTo(vpX, vpY); ctx.lineTo(nx2, nearTop); ctx.stroke();
+            ctx.beginPath(); ctx.moveTo(vpX, vpY); ctx.lineTo(nx2, nearBot); ctx.stroke();
+        }
+
+        // ---- Red stripes (two vertical lines in center of trench) ----
+        // They converge from VP downward within the trench
+        const redLfrac = 0.44, redRfrac = 0.56;
+        const redNearL = lerp(trenchNearL, trenchNearR, redLfrac);
+        const redNearR = lerp(trenchNearL, trenchNearR, redRfrac);
+
+        ctx.strokeStyle = RED;
+        ctx.lineWidth = 1.3;
+        ctx.beginPath(); ctx.moveTo(vpX, vpY); ctx.lineTo(redNearL, H); ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(vpX, vpY); ctx.lineTo(redNearR, H); ctx.stroke();
+        ctx.strokeStyle = YELLOW;
+        ctx.lineWidth = 1;
+
+        // ---- Crosshair (fixed center) ----
+        const cx = vpX, cy = vpY;
+        const cr = Math.min(W, H) * 0.045;
+        ctx.strokeStyle = YELLOW;
+        ctx.lineWidth = 1;
+        ctx.beginPath(); ctx.arc(cx, cy, cr, 0, Math.PI * 2); ctx.stroke();
+        ctx.beginPath(); ctx.arc(cx, cy, cr * 0.25, 0, Math.PI * 2); ctx.stroke();
+        // crosshair lines
+        ctx.beginPath();
+        ctx.moveTo(cx - cr * 1.6, cy); ctx.lineTo(cx - cr * 1.05, cy);
+        ctx.moveTo(cx + cr * 1.05, cy); ctx.lineTo(cx + cr * 1.6, cy);
+        ctx.moveTo(cx, cy - cr * 1.6); ctx.lineTo(cx, cy - cr * 1.05);
+        ctx.moveTo(cx, cy + cr * 1.05); ctx.lineTo(cx, cy + cr * 1.6);
+        ctx.stroke();
+    }
+
+    let frame = 0;
+    function loop() {
+        scroll = (scroll + SPEED) % 1;
+        drawScene(scroll);
+        frame++;
+        requestAnimationFrame(loop);
+    }
+    loop();
+
+    // Readout cycle
+    const codes = ['K7K3', 'LOCK', 'ARM', '7K3K', 'K7K3', 'K7K3', 'TARGET'];
+    let ci = 0;
+    setInterval(() => { ci = (ci + 1) % codes.length; document.getElementById('rd').textContent = codes[ci]; }, 2400);
+</script>
+<script>
+    const H_GRAPH = 5;
+    const STRIPE_W = 8;
+    const GAP = 2;
+    const UNIT = STRIPE_W + GAP; // 1目盛り = 12px
+
+    // 各行の設定c4
+    const configs = [
+        { speed: 0.55, freqs: [0.6, 1.2], amps: [0.30, 0.20], base: 0.52 },
+        { speed: 1.10, freqs: [1.0, 0.4, 1.7], amps: [0.25, 0.18, 0.16], base: 0.60 },
+        { speed: 0.75, freqs: [0.35, 1.5, 0.8], amps: [0.28, 0.20, 0.12], base: 0.55 },
+        { speed: 1.40, freqs: [1.3, 0.55], amps: [0.28, 0.22], base: 0.58 },
+    ];
+
+    // 各行の「現在の目盛り数（小数）」と「表示目盛り数（整数、スナップ済み）」
+    const states = configs.map(() => ({ current: 0, displayed: 0 }));
+
+    const canvases = ['c1', 'c2', 'c3'].map(id => document.getElementById(id));
+    let t = 0;
+    let last = null;
+
+    function getFill() {
+        return getComputedStyle(document.documentElement)
+            .getPropertyValue('--color-primary').trim() || '#000';
+    }
+
+    function getRawRatio(cfg, t) {
+        let v = cfg.base;
+        cfg.freqs.forEach((f, i) => {
+            v += cfg.amps[i] * Math.sin(2 * Math.PI * f * t * cfg.speed + i * 1.7);
+        });
+        return Math.max(0.04, Math.min(1.0, v));
+    }
+
+    function drawBar(canvas, steps) {
+        const parent = canvas.parentElement;
+        const W = parent.offsetWidth || 200;
+        if (canvas.width !== W) canvas.width = W;
+
+        const ctx = canvas.getContext('2d');
+        ctx.clearRect(0, 0, W, H_GRAPH);
+
+        if (steps <= 0) return;
+
+        const fill = getFill();
+        const barW = steps * UNIT - GAP; // 最後のGAPは不要
+
+        ctx.save();
+        ctx.beginPath();
+        ctx.rect(0, 0, barW, H_GRAPH);
+        ctx.clip();
+
+        ctx.fillStyle = fill;
+        const count = steps;
+        for (let i = 0; i < count; i++) {
+            ctx.fillRect(i * UNIT, 0, STRIPE_W, H_GRAPH);
+        }
+
+        ctx.restore();
+    }
+
+    // アナログっぽい追従: 目標に向かってなめらかに近づき、整数にスナップ
+    function updateState(state, targetSteps, dt) {
+        // 慣性つきで目標に近づく（速さは差に比例）
+        const lag = 8.0; // 大きいほど遅い
+        state.current += (targetSteps - state.current) * (1 - Math.exp(-dt * lag));
+
+        // 目盛り単位でスナップ（0.5以上で繰り上げ）
+        state.displayed = Math.round(state.current);
+    }
+
+    function frame02(ts) {
+        if (last === null) last = ts;
+        const dt = Math.min((ts - last) / 1000, 0.05);
+        last = ts;
+        t += dt;
+
+        canvases.forEach((cv, i) => {
+            const W = cv.parentElement.offsetWidth || 200;
+            const maxSteps = Math.floor((W + GAP) / UNIT);
+
+            const ratio = getRawRatio(configs[i], t);
+            const targetSteps = Math.round(ratio * maxSteps);
+
+            updateState(states[i], targetSteps, dt);
+            drawBar(cv, states[i].displayed);
+        });
+
+        requestAnimationFrame(frame02);
+    }
+
+    requestAnimationFrame(frame02);
+</script>
+
+</html>

@@ -1,0 +1,338 @@
+/**
+ * Single-Works.css - Work Detail Page Styles
+ * 
+ * WORK詳細ページのスタイル
+ */
+
+/* =====================
+   Single Works Page Layout
+   ===================== */
+
+.single-works-section {
+  padding: 96px 0;
+  min-height: 100vh;
+}
+
+.single-works-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 40px;
+}
+
+/* =====================
+   Back Link
+   ===================== */
+
+.breadcrumb {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-primary);
+  font-family: 'IBM Plex Sans JP', sans-serif;
+  letter-spacing: 0.56px;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-primary);
+  text-decoration: none;
+  font-family: 'Noto Sans JP', sans-serif;
+  transition: opacity 0.3s ease;
+  border: 1px solid var(--color-primary);
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.back-link:hover {
+  opacity: 0.7;
+}
+
+.back-link svg {
+  width: 17px;
+  height: 17px;
+}
+
+/* =====================
+   Work Detail Content
+   ===================== */
+
+.work-detail {
+  /* 基本的なWebフォント設定 */
+  font-family: 'IBM Plex Sans JP', sans-serif;
+}
+
+/* =====================
+   Work Title
+   ===================== */
+
+.work-title {
+  font-size: 36px;
+  font-weight: 500;
+  font-family: 'Hanken Grotesk', 'Noto Sans JP', sans-serif;
+  color: var(--color-primary);
+  margin: 0 0 48px 0;
+  line-height: 1.5;
+  letter-spacing: 1.44px;
+}
+
+/* =====================
+   Work Meta Rows (新形式)
+   ===================== */
+
+.work-meta-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 96px;
+  padding-bottom: 48px;
+}
+
+.meta-row {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 0;
+  align-items: flex-start;
+  padding: 19px 10px;
+  position: relative;
+  border-bottom: 1px solid var(--color-primary);
+  margin-left: 0;
+}
+
+.meta-row::before {
+  content: "";
+  position: absolute;
+  left: -16px;
+  bottom: 6px;
+  width: 20px;
+  height: 1px;
+  background: var(--color-primary);
+  transform: rotate(45deg);
+}
+
+.meta-label {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  letter-spacing: 0.64px;
+  font-family: 'IBM Plex Sans JP', sans-serif;
+  flex-shrink: 0;
+}
+
+.meta-value {
+  font-size: 16px;
+  color: var(--color-primary);
+  line-height: 1.5;
+  word-break: break-word;
+  padding-left: 36px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+}
+
+.meta-value a {
+  color: var(--color-primary);
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-primary);
+  transition: opacity 0.3s ease;
+}
+
+.meta-value a:hover {
+  opacity: 0.7;
+}
+
+/* =====================
+   Work Gallery Section
+   ===================== */
+
+.work-gallery-section {
+  margin-bottom: 48px;
+  position: relative;
+  padding: 50px 40px 40px 40px;
+  background: rgba(235, 235, 235, 0.5);
+  backdrop-filter: blur(2px);
+  border-radius: 4px;
+  position: relative;
+}
+.work-gallery-section::before {
+  content: "IMAGES";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  color: var(--color-secondary);
+  font-size: 13px;
+  background: var(--color-primary);
+  text-indent: 1em;
+  font-family: 'IBM Plex Sans JP', sans-serif;
+}
+
+.work-gallery {
+  /* ギャラリー画像を3列グリッドレイアウト */
+  display: flex;
+  gap: 36px;
+  align-items: start;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-item {
+  /* ギャラリーアイテム */
+  width: 38%;
+  height: auto;
+  display: block;
+  margin: 0;
+  overflow: hidden;
+  border: 2px solid var(--color-primary);
+  border-radius: 0;
+  position: relative;
+  aspect-ratio: auto;
+}
+
+.gallery-image {
+  /* ギャラリー画像 */
+  width: 100%;
+  height: auto;
+  display: block;
+  /* マウスホバー時のズーム効果 */
+  transition: transform 0.3s ease;
+  object-fit: cover;
+}
+
+/* =====================
+   Loading & Error States
+   ===================== */
+
+.loading-message {
+  text-align: center;
+  padding: 60px 20px;
+  font-size: 18px;
+  color: var(--color-accent);
+}
+
+.error-message {
+  background: #fff3cd;
+  border: 1px solid #ffc107;
+  border-radius: 4px;
+  padding: 16px;
+  color: #856404;
+  margin: 20px 0;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* =====================
+   Responsive Design
+   ===================== */
+
+/* タブレット（768px以下） */
+@media (max-width: 768px) {
+  .single-works-section {
+    padding: 64px 0;
+  }
+
+  .single-works-container {
+    max-width: 100%;
+    padding: 40px 20px;
+  }
+
+  .work-title {
+    font-size: 28px;
+    letter-spacing: 1.12px;
+    margin-bottom: 40px;
+  }
+
+  .work-meta-rows {
+    margin-bottom: 60px;
+    padding-bottom: 30px;
+  }
+
+  .meta-row {
+    grid-template-columns: 100px 1fr;
+    padding-bottom: 20px;
+  }
+
+  .meta-label {
+    font-size: 14px;
+    letter-spacing: 0.56px;
+  }
+
+  .meta-value {
+    font-size: 14px;
+    padding-left: 24px;
+  }
+
+  .work-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .work-gallery-section {
+    padding: 30px 20px;
+    margin-bottom: 40px;
+  }
+}
+
+/* スマートフォン（480px以下）*/
+@media (max-width: 480px) {
+  .single-works-section {
+    padding: 48px 0;
+  }
+
+  .single-works-container {
+    max-width: 100%;
+    padding: 24px 16px;
+  }
+
+  .back-link {
+    margin-bottom: 30px;
+    font-size: 16px;
+    padding: 6px 12px;
+  }
+
+  .work-title {
+    font-size: 24px;
+    letter-spacing: 0.96px;
+    margin-bottom: 30px;
+  }
+
+  .work-meta-rows {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+  }
+
+  .meta-row {
+    grid-template-columns: 80px 1fr;
+    padding-bottom: 16px;
+  }
+
+  .meta-label {
+    font-size: 12px;
+    letter-spacing: 0.48px;
+  }
+
+  .meta-value {
+    font-size: 14px;
+    padding-left: 16px;
+  }
+
+  .work-gallery {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .work-gallery-section {
+    padding: 20px 16px;
+    margin-bottom: 30px;
+  }
+
+  .gallery-item {
+    border-width: 1px;
+  }
+}
