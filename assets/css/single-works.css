@@ -232,7 +232,10 @@
    ===================== */
 
 /* タブレット（768px以下） */
-@media (max-width: 768px) {
+@media (max-width: 980px) {
+  .breadcrumb{
+    font-size: 11px;
+  }
   .single-works-section {
     padding: 64px 0;
   }
@@ -254,7 +257,7 @@
   }
 
   .meta-row {
-    grid-template-columns: 100px 1fr;
+    grid-template-columns:1fr;
     padding-bottom: 20px;
   }
 
@@ -265,7 +268,7 @@
 
   .meta-value {
     font-size: 14px;
-    padding-left: 24px;
+    padding:5px 0px 0px 0px;
   }
 
   .work-gallery {
@@ -279,60 +282,3 @@
   }
 }
 
-/* スマートフォン（480px以下）*/
-@media (max-width: 480px) {
-  .single-works-section {
-    padding: 48px 0;
-  }
-
-  .single-works-container {
-    max-width: 100%;
-    padding: 24px 16px;
-  }
-
-  .back-link {
-    margin-bottom: 30px;
-    font-size: 16px;
-    padding: 6px 12px;
-  }
-
-  .work-title {
-    font-size: 24px;
-    letter-spacing: 0.96px;
-    margin-bottom: 30px;
-  }
-
-  .work-meta-rows {
-    margin-bottom: 40px;
-    padding-bottom: 20px;
-  }
-
-  .meta-row {
-    grid-template-columns: 80px 1fr;
-    padding-bottom: 16px;
-  }
-
-  .meta-label {
-    font-size: 12px;
-    letter-spacing: 0.48px;
-  }
-
-  .meta-value {
-    font-size: 14px;
-    padding-left: 16px;
-  }
-
-  .work-gallery {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-
-  .work-gallery-section {
-    padding: 20px 16px;
-    margin-bottom: 30px;
-  }
-
-  .gallery-item {
-    border-width: 1px;
-  }
-}

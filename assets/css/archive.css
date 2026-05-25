@@ -206,7 +206,7 @@ letter-spacing: 0.56px;
   }
 
   .archive-container {
-    padding: 0 16px;
+    padding: 0 8%;
   }
 
   .archive-header h1 {
@@ -220,8 +220,7 @@ letter-spacing: 0.56px;
 
   /* グリッドを1カラムに */
   .works-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
+      grid-template-columns: repeat(1, 1fr);
   }
 
   .archive-header {
@@ -229,7 +228,7 @@ letter-spacing: 0.56px;
   }
 
   .works-card-title {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .works-card-role {
