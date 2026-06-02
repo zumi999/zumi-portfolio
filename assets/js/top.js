@@ -2,10 +2,9 @@
    * Compass Functionality
    */
   function initCompass() {
-    const compassEl = document.getElementById("compass");
-    if (!compassEl) return;
+    // Disable compass on screens 980px or smaller
+    if (window.innerWidth <= 980) return;
 
-    const needle = document.getElementById("needle");
     const degTxt = document.getElementById("degTxt");
     const dirTxt = document.getElementById("dirTxt");
     const ticksG = document.getElementById("ticks");

@@ -166,10 +166,10 @@
 #btn-toggle path {
   fill: var(--color-primary);
 }
-#btn-toggle :hover {
+#btn-toggle:hover {
   color: var(--color-secondary);
 }
-#btn-toggle :hover path {
+#btn-toggle:hover path {
   fill: var(--color-secondary);
 }
 #btn-toggle.active {
@@ -179,7 +179,7 @@
 #btn-toggle.active path {
   fill: var(--color-secondary);
 }
-#btn-toggle.active :hover path {
+#btn-toggle.active:hover path {
   fill: var(--color-primary);
 }
 @media only screen and (max-width: 980px) {
@@ -204,9 +204,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 64px;
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 50px;
   align-items: center;
   height: 85vh;
 }
@@ -970,7 +969,7 @@ svg#compass {
   justify-content: center;
   gap: 15px;
   border: 1px solid var(--color-primary);
-  padding: 4px 8px;
+  padding: 4px 8px 3px;
   border-radius: 4px;
   background: white;
   font-size: 15px;
@@ -987,7 +986,9 @@ svg#compass {
   background: var(--color-primary);
   color: white;
 }
-
+.link-box:hover svg,.link-box:hover figure img{
+  filter: invert(1);
+}
 .contact-icon {
   width: 20px;
   height: 20px;
