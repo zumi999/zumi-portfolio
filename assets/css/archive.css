@@ -335,11 +335,11 @@ letter-spacing: 0.56px;
 /* タブレット（768px以下） */
 @media (max-width: 980px) {
   .archive-section {
-    padding: 64px 0;
+    padding: 128px 0 64px;
   }
 
   .archive-container {
-    padding: 0 10%;
+    padding: 0 10% 0 5%;
   }
 
   .archive-header h1 {
@@ -367,11 +367,11 @@ letter-spacing: 0.56px;
 /* スマートフォン（480px以下）*/
 @media (max-width: 480px) {
   .archive-section {
-    padding: 48px 0;
+    padding: 98px 0 48px;
   }
 
   .archive-container {
-    padding: 0 8%;
+    padding: 0 10% 0 7%;
   }
 
   .archive-header h1 {

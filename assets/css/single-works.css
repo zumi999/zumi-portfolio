@@ -280,5 +280,8 @@
     padding: 30px 20px;
     margin-bottom: 40px;
   }
+  .gallery-item {
+    width: 100%;
+  }
 }
 

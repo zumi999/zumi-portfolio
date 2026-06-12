@@ -420,7 +420,7 @@ section {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 980px) {
   h1 {
     font-size: 48px;
   }
@@ -460,7 +460,7 @@ section {
   }
 
   .work-detail {
-    padding: 24px;
+    padding: 24px 16px;
   }
 
   .work-detail-header h1 {
