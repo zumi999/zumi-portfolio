@@ -451,10 +451,13 @@ svg#compass {
 /* 白い太ボーダー */
 .card-border-inner {
   padding: 5px;
-  background: #fff;
+  background: var(--color-secondary);
   clip-path: inherit;
+  transition: all 0.3s ease-in-out;
 }
-
+.works-card-container:hover .card-border-inner {
+  background: var(--color-primary);
+}
 /* 中身 */
 .card-content {
   width: 100%;

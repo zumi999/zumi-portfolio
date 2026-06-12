@@ -10,7 +10,6 @@
 
 .archive-section {
   padding: 96px 0;
-  min-height: 100vh;
 }
 
 .archive-container {
@@ -48,21 +47,22 @@
    Works Grid Layout
    ===================== */
    .works-grid {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   height: auto;
-  grid-template-columns: repeat(2, 1fr);
   gap: 9%;
   position: relative;
 }
 .works-card-container{
   display: flex;
   position: relative;
-  width: 100%;
+  width: calc(91%/2);
   overflow: visible;
   aspect-ratio: 59.719 /40.281;
   transition: transform 0.3s ease;
   filter: drop-shadow(-7px 7px 0 rgb(196, 196, 196, 0.9));
   cursor: pointer;
+  margin-bottom: 80px;
 }
    
 .card-shadow:has(.works-content),.card-border-outer:has(.works-content){
@@ -228,6 +228,7 @@
 }
 .works-card-container:hover .works-card-image {
   animation: glitchShadow 1.6s infinite;
+  animation-delay: 0.3s;
 }
 
 /* =====================
@@ -257,7 +258,6 @@ cursor: pointer;
    ===================== */
 
 .works-card-content {
-  background: white;
   padding:0 8px 0 18px;
 }
 
@@ -276,7 +276,9 @@ letter-spacing: 0.56px;
   text-overflow: ellipsis;
   border-bottom: solid 1px var(--color-primary);
 }
-
+.works-card-container:hover .works-card-title {
+  color: var(--color-secondary);
+}
 .works-card-role {
   font-size: 14px;
   color: var(--color-accent);
@@ -351,10 +353,12 @@ letter-spacing: 0.56px;
 
   /* グリッドを2カラムに */
   .works-grid {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 50px;
+    gap: 30px;
   }
-
+  .works-card-container{
+    width: 100%;
+    margin-bottom: 60px;
+  }
   .archive-header {
     margin-bottom: 60px;
   }
@@ -380,8 +384,8 @@ letter-spacing: 0.56px;
   }
 
   /* グリッドを1カラムに */
-  .works-grid {
-      grid-template-columns: repeat(1, 1fr);
+  .works-card-container {
+    width: 100%;
   }
 
   .archive-header {
