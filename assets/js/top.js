@@ -8,6 +8,14 @@
     const degTxt = document.getElementById("degTxt");
     const dirTxt = document.getElementById("dirTxt");
     const ticksG = document.getElementById("ticks");
+    const compassEl = document.getElementById("compass");
+    const needle = document.getElementById("needle");
+
+    // Check if all required elements exist
+    if (!degTxt || !dirTxt || !ticksG || !compassEl || !needle) {
+      console.warn('Compass elements not found');
+      return;
+    }
 
     // Generate compass ticks
     for (let i = 0; i < 72; i++) {
@@ -276,3 +284,10 @@ cardElement.addEventListener("pointermove", (event) => {
 cardElement.addEventListener("pointerleave", () => {
   updateCardTilt(0, 0);
 });
+
+// Initialize Compass when DOM is ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initCompass);
+} else {
+  initCompass();
+}
